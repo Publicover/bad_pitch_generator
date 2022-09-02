@@ -11,6 +11,12 @@
   </head>
 
   <body>
+    <% unless notice.nil? %>
+      <p class='notice text-center'><%= notice %></p>
+    <% end %>
+    <% unless alert.nil? %>
+      <p class='alert text-center'><%= alert %></p>
+    <% end %>
     <%= yield %>
   </body>
 </html>
