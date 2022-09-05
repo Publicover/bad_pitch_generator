@@ -2,16 +2,22 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
-#bad-pitch-title {
+#pitch-title-block {
   min-height: 75vh;
   background-color: #F2F0E9;
   padding-top: 25vh;
 }
 
-#bad-pitch-button {
+#pitch-button-block {
   min-height: 75vh;
   background-color: #FEE17D;
   padding-top: 25vh;
+}
+
+#pink-flamingo-block {
+  min-height: 75vh;
+  background-color: #FF9D86;
+  padding-left: 5rem;
 }
 
 // USE vh TAG TO GET RESPONSIVE FONTS
@@ -36,15 +42,16 @@
   border: 1px solid black;
 
   &:hover {
-    background-color: #FF5C35;
-    font-family: 'Lora', serif;
-    font-weight: italic !important;
     box-shadow: none;
-    color: white;
-    margin-top: 5rem;
-    min-height: 4rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    border: 1px solid black;
   }
+}
+
+#made-this-shit {
+  margin-top: 4rem;
+  // margin-left: 5rem;
+  margin-bottom: 1rem;
+}
+
+.left-margin {
+  margin-left: 5rem;
 }
