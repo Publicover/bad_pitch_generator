@@ -1,3 +1,50 @@
 // Place all the styles related to the dashboards controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+#bad-pitch-title {
+  min-height: 75vh;
+  background-color: #F2F0E9;
+  padding-top: 25vh;
+}
+
+#bad-pitch-button {
+  min-height: 75vh;
+  background-color: #FEE17D;
+  padding-top: 25vh;
+}
+
+// USE vh TAG TO GET RESPONSIVE FONTS
+//   1 v* is equal to 1% of the intial containing block
+
+#arrows-red {
+  margin: -2rem;
+  padding-top: 3rem;
+  z-index: 1;
+}
+
+#btn-pitch {
+  background-color: #FF5C35;
+  font-family: 'Lora', serif;
+  font-weight: italic !important;
+  box-shadow: 5px 10px 1px black;
+  color: white;
+  margin-top: 5rem;
+  min-height: 4rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  border: 1px solid black;
+
+  &:hover {
+    background-color: #FF5C35;
+    font-family: 'Lora', serif;
+    font-weight: italic !important;
+    box-shadow: none;
+    color: white;
+    margin-top: 5rem;
+    min-height: 4rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    border: 1px solid black;
+  }
+}

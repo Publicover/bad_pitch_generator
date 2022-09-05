@@ -15,3 +15,6 @@ ActiveStorage.start()
 
 import jquery from 'jquery';
 window.$ = window.jquery = jquery;
+
+require('typeface-lora')
+require('@fontsource/dm-sans')
