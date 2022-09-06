@@ -18,6 +18,9 @@
   min-height: 75vh;
   background-color: #FF9D86;
   padding-left: 5rem;
+  background-image: url('flamingo_clear.png');
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 // USE vh TAG TO GET RESPONSIVE FONTS
@@ -55,3 +58,7 @@
 .left-margin {
   margin-left: 5rem;
 }
+
+// #flamingo-png {
+//   z-index: -1;
+// }
