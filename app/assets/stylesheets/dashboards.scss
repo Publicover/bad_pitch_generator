@@ -51,14 +51,22 @@
 
 #made-this-shit {
   margin-top: 4rem;
-  // margin-left: 5rem;
   margin-bottom: 1rem;
+}
+
+#better-sales {
+  margin-top: 4rem;
 }
 
 .left-margin {
   margin-left: 5rem;
 }
 
-// #flamingo-png {
-//   z-index: -1;
-// }
+#specs-block {
+  min-height: 75vh;
+  background-color: #F2F0E9;
+  padding-left: 5rem;
+  background-image: url('specs_clear.png');
+  background-repeat: no-repeat;
+  background-position: right;
+}

@@ -38,11 +38,6 @@ p {
   color: #FF5C35;
 }
 
-// .container {
-//   padding: 0px 0px 0px 0px !important;
-//   margin: 0px 0px 0px 0px !important;
-// }
-//
 .alert {
   background-color: #ff0f0f;
 }
@@ -87,9 +82,27 @@ p {
   margin-right: 0 !important;
 }
 
-.tight-spaces {
+.tight-spaces-white {
   line-height: 135%;
   color: white;
   font-weight: lighter;
   margin-top: 5rem;
+}
+
+.tight-spaces-black {
+  line-height: 135%;
+  font-weight: lighter;
+}
+
+.smaller-print {
+  font-size: 1rem;
+}
+
+.smallest-print {
+  font-size: 0.75rem;
+  font-style: italic;
+}
+
+.serif-p {
+  font-family: 'Lora', serif;
 }
