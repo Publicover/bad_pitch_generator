@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 # mailchimp = MailchimpMarketing::Client.new
 # mailchimp.set_config({
 #   :api_key => ENV["MAILCHIMP_API_KEY"],
