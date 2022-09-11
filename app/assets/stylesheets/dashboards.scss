@@ -49,6 +49,24 @@
   }
 }
 
+#btn-second-pitch {
+  background-color: #FF5C35;
+  font-family: 'Lora', serif;
+  font-weight: italic !important;
+  box-shadow: 5px 10px 1px black;
+  color: white;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  min-height: 4rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  border: 1px solid black;
+
+  &:hover {
+    box-shadow: none;
+  }
+}
+
 #made-this-shit {
   margin-top: 4rem;
   margin-bottom: 1rem;
@@ -83,4 +101,54 @@
 
 .right-margin {
   margin-right: 5rem;
+}
+
+#pitch-reveal {
+  min-height: 75vh;
+  background-color: #FEE17D;
+  padding-top: 15vh;
+  padding-left: 5rem;
+  background-image: url('walking_fish_clear.png');
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+#pitch-subtitle {
+  font-family: 'Lora';
+  font-style: italic;
+  color: #FF5C35;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.bad-pitch {
+  max-width: 55vw;
+  font-family: 'Lora', serif;
+  font-size: 2.4rem;
+}
+
+.small-cta {
+  font-family: 'DM Sans', sans-serif;
+  color: #FF5C35;
+  font-size: 0.95rem;
+}
+
+#fancy-a-go {
+  font-family: 'Lora', serif;
+  font-size: 1.25rem;
+  font-style: italic;
+  font-weight: 600;
+  margin-top: 2.5rem;
+}
+
+#bad-pitch-bottom {
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#share-cta {
+  margin-top: 1rem;
+  line-height: 135%;
+  font-weight: lighter;
+  font-size: 0.95rem !important;
 }

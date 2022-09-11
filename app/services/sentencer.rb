@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Sentencer
   def call
     # "We are a #{@company} who #{@verb} #{@noun} for #{@adj} #{@org} #{@conjunction} want to #{@predicate} #{@object}."
