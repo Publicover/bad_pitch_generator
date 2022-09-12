@@ -36,7 +36,7 @@ class SentencerTest < ActiveSupport::TestCase
   test 'should select predicate' do
     verb = Sentencer.new.predicate
     refute_equal 'carf', verb
-    assert Verb.pluck(:word).include?(Sentencer.new.predicate)
+    assert Verb.pluck(:word).include?(verb)
   end
 
   test 'should select direct object' do

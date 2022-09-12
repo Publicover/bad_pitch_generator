@@ -15,6 +15,41 @@
   }
 }
 
+#btn-pitch {
+  background-color: #FF5C35;
+  font-family: 'Lora', serif;
+  font-weight: italic !important;
+  box-shadow: 5px 10px 1px black;
+  color: white;
+  margin-top: 5rem;
+  min-height: 4rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  border: 1px solid black;
+
+  &:hover {
+    box-shadow: none;
+  }
+}
+
+#btn-second-pitch {
+  background-color: #FF5C35;
+  font-family: 'Lora', serif;
+  font-weight: italic !important;
+  box-shadow: 5px 10px 1px black;
+  color: white;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  min-height: 4rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  border: 1px solid black;
+
+  &:hover {
+    box-shadow: none;
+  }
+}
+
 .btn-bottom-margin {
   margin-bottom: 6rem;
 }
