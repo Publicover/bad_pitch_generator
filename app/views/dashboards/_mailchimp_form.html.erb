@@ -1,19 +1,23 @@
-<div class='row'>
-  <div class='col text-left'>
-    <h2>FORM</h2>
-  </div>
-</div>
-<div class='row'>
-  <div class='col text-left smallest-print'>
-    <div class='trunc-spacing'>
-      <sup>*</sup>We took the gamble that at least 1 of you would be named Pete at some point.
-      and feel really special when you saw that. Did it work?
+<div id='mailchimp-signup'>
+  <%= form_for :contact, url: dashboards_mailchimp_signup_path, method: :post, remote: true do |f| %>
+    <div class='row'>
+      <div class='col text-left'>
+        <%= f.text_field :email, value: params[:email], name: :email, placeholder: 'email' %>
+        <%= f.text_field :fname, value: params[:fname], name: :fname, placeholder: 'fname' %>
+      </div>
     </div>
-
-  </div>
-</div>
-<div class='row'>
-  <div class='col text-left'>
-    SUBMITBUTTON
-  </div>
+    <div class='row'>
+      <div class='col text-left smallest-print'>
+        <div class='trunc-spacing mt-3 mb-3'>
+          <sup>*</sup>We took the gamble that at least 1 of you would be named Pete at some point.
+          and feel really special when you saw that. Did it work?
+        </div>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col text-left'>
+        <%= f.submit '{ Connect with us}', class: 'btn fst-italic', id: 'connnect-with-us' %>
+      </div>
+    </div>
+  <% end %>
 </div>
