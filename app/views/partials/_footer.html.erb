@@ -2,10 +2,18 @@
   <div class='left-margin'>
     <div class='row'>
       <div class='col text-start'>
-        <%= image_tag('pubco_logo.png', id: 'pubco-logo', class: 'margin-left') %>
+        <%= link_to "https://www.publicover.co", target: "_blank" do %>
+          <% image_tag('pubco_logo.png', id: 'pubco-logo', class: 'margin-left') %>
+        <% end %>
       </div>
       <div class='col text-end right-margin align-self-center'>
-        <%= image_tag('ig_logo.png') %>&nbsp<%= image_tag('li_logo.png') %>
+        <%= link_to "https://www.instagram.com/publicoverandco/", target: "_blank" do %>
+          <% image_tag('ig_logo.png') %>
+        <% end %>
+        &nbsp
+        <%= link_to "https://www.linkedin.com/company/publicover/?originalSubdomain=de", target: "_blank" do %>
+          <% image_tag('li_logo.png') %>
+        <% end %>
       </div>
     </div>
   </div>
