@@ -8,7 +8,7 @@
     <div class='row'>
       <div class='col text-start text-wrap'>
         <div class='bad-pitch'>
-          We are a connoisseur who jumpstarts maximalism for stagnant partners who want to foster exegesis.
+          <%= @sentence %>
         </div>
       </div>
     </div>
@@ -21,18 +21,18 @@
   </div>
   <div id='bad-pitch-bottom'>
     <div class='row'>
-      <div class='col text-center' id='fancy-a-go'>
+      <div class='col text-center mb-4' id='fancy-a-go'>
         Wow, such awful. Fancy another go?
       </div>
     </div>
     <div class='row'>
       <div class='col text-center'>
-        <button class='btn fst-italic' id='btn-second-pitch'>{ Gimme a Pitch! }</button>
+        <%= render 'pitch_button' %>
       </div>
     </div>
     <div class='row'>
       <div class='col text-center'>
-        <p id='share-cta'>
+        <p id='share-cta' class='mt-4'>
           Share your screenshot on LinkedIn and tag us,<br />
           & we'll send you a discount code for our DIY Tools
         </p>
