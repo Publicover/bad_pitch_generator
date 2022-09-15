@@ -79,6 +79,12 @@ p {
   margin: auto;
 }
 
+.pagy-middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .container-fluid {
   padding-left: 0 !important;
   padding-right: 0 !important;

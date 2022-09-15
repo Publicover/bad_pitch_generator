@@ -1,8 +1,8 @@
-class UsersController < ApplicationController
+class Admin::UsersController < ApplicationController
   before_action :set_user, except: :index
 
   def index
-    @users = User.all
+    @pagy, @users = pagy(User.all)
   end
 
   def show; end
@@ -11,12 +11,12 @@ class UsersController < ApplicationController
 
   def update
     @user.update(user_params)
-    redirect_to users_path, notice: 'User updated.'
+    redirect_to admin_users_path, notice: 'User updated.'
   end
 
   def destroy
     @user.destroy
-    redirect_to users_path, notice: 'User deleted.'
+    redirect_to admin_users_path, notice: 'User deleted.'
   end
 
   private
