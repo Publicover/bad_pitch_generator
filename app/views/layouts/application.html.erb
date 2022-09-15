@@ -21,6 +21,7 @@
     <% unless alert.nil? %>
       <p class='alert text-center'><%= alert %></p>
     <% end %>
+    <%= render 'partials/header' if current_user %>
     <%= yield %>
   </body>
 </html>
