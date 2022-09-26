@@ -2,62 +2,19 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
-#pitch-title-block {
-  min-height: 75vh;
-  background-color: #F2F0E9;
-  padding-top: 25vh;
-}
-
-#pitch-button-block {
-  min-height: 75vh;
-  background-color: #FEE17D;
-  padding-top: 25vh;
-}
-
-#pink-flamingo-block {
-  min-height: 75vh;
-  background-color: #FF9D86;
-  padding-left: 7%;
-  background-image: url('flamingo_clear.png');
-  background-repeat: no-repeat;
-  background-position: right;
-}
-
 // USE vh TAG TO GET RESPONSIVE FONTS
 //   1 v* is equal to 1% of the intial containing block
 
-#arrows-red {
-  margin: -2rem;
-  padding-top: 3rem;
-  z-index: 1;
+.tight-spaces-white {
+  line-height: 135%;
+  color: white;
+  font-weight: lighter;
+  margin-top: 5rem;
 }
 
-#made-this-shit {
-  margin-top: 4rem;
-  margin-bottom: 1rem;
-}
-
-#better-sales {
-  margin-top: 4rem;
-}
-
-#specs-block {
-  min-height: 75vh;
-  background-color: #F2F0E9;
-  padding-left: 7%;
-  background-image: url('specs_clear.png');
-  background-repeat: no-repeat;
-  background-position: right;
-}
-
-#footer-block {
-  padding-left: 7%;
-}
-
-#pubco-logo {
-  max-width: 45%;
-  height: auto;
-  margin: 3vh 0 2vh 0;
+.tight-spaces-black {
+  line-height: 135%;
+  font-weight: lighter;
 }
 
 .right-margin {
@@ -99,7 +56,8 @@
   font-size: 1.25rem;
   font-style: italic;
   font-weight: 600;
-  margin-top: 2.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 #bad-pitch-bottom {
@@ -121,4 +79,8 @@
 #pitch-reveal > div.left-margin > div:nth-child(3) > div > span > a > span {
   text-decoration: underline;
   text-decoration-color: #FF5C35;
+}
+
+.share-copy {
+  font-size: 0.75rem !important;
 }
