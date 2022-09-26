@@ -2,8 +2,8 @@
   <%= form_for :contact, url: dashboards_mailchimp_signup_path, method: :post, remote: true do |f| %>
     <div class='row'>
       <div class='col text-left'>
-        <%= f.text_field :email, value: params[:email], name: :email, placeholder: 'email' %>
-        <%= f.text_field :fname, value: params[:fname], name: :fname, placeholder: 'fname' %>
+        <%= f.text_field :email, value: params[:email], name: :email, placeholder: 'email', disabled: true %>
+        <%= f.text_field :fname, value: params[:fname], name: :fname, placeholder: 'fname', disabled: true %>
       </div>
     </div>
     <div class='row'>
