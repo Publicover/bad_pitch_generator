@@ -9,7 +9,7 @@ import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 import 'bootstrap'
 
-import jquery from 'jquery';
+// import jquery from 'jquery';
 window.$ = window.jquery = jquery;
 
 Rails.start()
