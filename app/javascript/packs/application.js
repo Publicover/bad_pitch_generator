@@ -9,12 +9,12 @@ import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 import 'bootstrap'
 
+// import jquery from 'jquery';
+window.$ = window.jquery = jquery;
+
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
-
-import jquery from 'jquery';
-window.$ = window.jquery = jquery;
 
 require('typeface-lora')
 require('@fontsource/dm-sans')
