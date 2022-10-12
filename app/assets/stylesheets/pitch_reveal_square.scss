@@ -2,7 +2,7 @@
   min-height: 75vh;
   background-color: #FEE17D;
   padding-top: 15vh;
-  padding-left: 7%;
+  padding-left: 3%;
 }
 
 .bad-pitch-square {
@@ -12,11 +12,15 @@
   border: 2px dashed black;
   margin: auto;
   padding-top: 3rem;
-  padding-left: 2rem;
+  // padding-left: 2rem;
   padding-right: 2rem;
   background-image: url('walking_fish_clear_cropped.png');
   background-repeat: no-repeat;
   background-position: bottom right;
+}
+
+.pitch-results {
+  padding-left: 7%;
 }
 
 .new-bad {
@@ -30,4 +34,11 @@
   font-style: italic;
   padding-top: 7rem;
   padding-bottom: 1rem;
+  padding-left: 7% !important;
+}
+
+.pitch-plug-text {
+  font-size: 0.75rem;
+  font-style: italic;
+  padding-top: 7rem;
 }

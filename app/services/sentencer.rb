@@ -2,12 +2,16 @@
 
 class Sentencer
   def call
-    # "We are a #{@company} who #{@verb} #{@noun} for #{@adj} #{@org} #{@conjunction} want to #{@predicate} #{@object}."
-    "We are a #{company} who #{verb} #{noun} for #{adj} #{org_and_conjunction} want to #{predicate} #{obj}."
+    "We are #{article_and_noun(company)} who #{verb} #{noun} for #{adj}
+    #{org_and_conjunction} want to #{predicate} #{obj}."
   end
 
   def company
     Company.all.sample.word
+  end
+
+  def article_and_noun(word)
+    word[0].match?(/a|e|i|o|u/) ? "an #{word}" : "a #{word}"
   end
 
   def verb

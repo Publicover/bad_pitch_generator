@@ -1,0 +1,70 @@
+@media only screen and (max-width: 576px) {
+  .mobile {
+    display: block;
+  }
+
+  #pitch-title-block {
+    padding-top: 15vh;
+  }
+
+  #pubco-logo-top {
+    max-width: 65% !important;
+    height: auto;
+    margin-bottom: 3rem;
+  }
+
+  #pitch-reveal-square {
+    padding-left: 0% !important;
+  }
+
+  .no-pad {
+    padding-left: 0% !important;
+  }
+
+  .pitch-plug-padding {
+    padding-left: auto !important;
+  }
+
+  #made-this-shit {
+    min-width: 85vw;
+  }
+
+  #specs-block {
+    background-image: none !important;
+    background-repeat: none;
+    background-position: none;
+  }
+
+  #better-sales {
+    max-width: 85vw;
+  }
+
+  #connect-with-us {
+    margin-bottom: 3rem;
+  }
+
+  .trunc-spacing {
+    max-width: 80vw;
+  }
+
+  .mobile-hidden {
+    display: none;
+  }
+
+  .share-copy {
+    padding: 3em 4em 0 4em;
+    margin: auto 0;
+  }
+
+  .mobile-margin {
+    margin-left: 1rem !important;
+  }
+
+  .mobile-br {
+    display: block !important;
+  }
+
+  .desktop-br {
+    display: none;
+  }
+}

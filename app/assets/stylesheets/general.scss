@@ -103,4 +103,18 @@ p {
 
 .serif-p {
   font-family: 'Lora', serif;
+  line-height: 150%;
+}
+
+.pic-bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+.mobile-br {
+  display: none;
+}
+
+.desktop-br {
+  display: block;
 }

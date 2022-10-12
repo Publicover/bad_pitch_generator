@@ -11,6 +11,11 @@ class SentencerTest < ActiveSupport::TestCase
     assert Company.pluck(:word).include?(Sentencer.new.company)
   end
 
+  test 'should assign article' do
+    assert_equal 'a lorem', Sentencer.new.article_and_noun('lorem')
+    assert_equal 'an ipsum', Sentencer.new.article_and_noun('ipsum')
+  end
+
   test 'should select verb' do
     assert Verb.pluck(:word).include?(Sentencer.new.verb)
   end

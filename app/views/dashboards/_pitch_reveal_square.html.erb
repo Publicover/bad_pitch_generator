@@ -1,19 +1,19 @@
 <div id='pitch-reveal-square'>
   <div class='row'>
-    <div class='col-xs-12 col-md-6  offset-md-3 text-start text-wrap'>
+    <div class='col-xs-12 col-md-6 offset-md-3 text-start text-wrap'>
       <div class='bad-pitch-square'>
         <div class='row'>
           <div class='col'>
-            <span class='new-bad fst-italic'>My new bad pitch:</span><br />
-            <div class='pitch-results'>
+            <span class='new-bad fst-italic pitch-left-padding'>My new bad pitch:</span><br />
+            <div class='pitch-results pitch-left-padding'>
               <p><%= @sentence %></p>
             </div>
           </div>
           <div class='row'>
-            <div class='col-8 pitch-plug start-bottom ms-auto'>
+            <div class='col-8 pitch-plug pitch-plug-padding start-bottom no-pad'>
               make your own bad pitch at<br />pitches.publicover.co
             </div>
-            <div class='col-4 pitch-plug me-auto'>
+            <div class='col-4 pitch-plug me-auto bottom-0 start-0'>
               <%= image_tag('pubco_logo_small.png', class: 'align-bottom') %>
             </div>
           </div>
@@ -21,10 +21,10 @@
       </div>
     </div>
 
-    <div class='col-md-3 ms-auto text-start align-middle share-copy'>
+    <div class='col-md-3 text-start align-middle share-copy mobile-margin'>
       <span>
         Share your screenshot on
-        <br />Linkedln and tag us,
+        <br /><%= link_to 'Linkedln and tag us', 'https://www.linkedin.com/company/publicover/?originalSubdomain=de', target: "_blank" %>
         <br />& we'll send you a discount
         <br />code for our DIY Tools!
       </span>
