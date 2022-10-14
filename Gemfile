@@ -33,6 +33,7 @@ gem 'devise'
 gem 'MailchimpMarketing', :git => 'https://github.com/mailchimp/mailchimp-marketing-ruby.git'
 gem 'net-smtp'
 gem 'pagy', '~> 5.10'
+gem 'pg_search'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

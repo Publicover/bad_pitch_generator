@@ -7,15 +7,16 @@
 
   <div class='row'>
     <div class='col text-center'>
-      <%= link_to 'Log out', destroy_user_session_path, method: :delete %>
+      <%= render 'partials/search_form' %>
     </div>
   </div>
+  <%= render 'partials/clear_search', path: admin_users_path %>
 
   <table class='table table-hover'>
     <thead>
       <tr>
-        <th scope='col'>Email</th>
-        <th scope='col'>First Name</th>
+        <th scope='col'><%= sort_link "email" %></th>
+        <th scope='col'><%= sort_link "first_name" %></th>
       </tr>
     </thead>
     <tbody>

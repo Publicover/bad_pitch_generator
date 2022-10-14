@@ -10,11 +10,6 @@ class Admin::UsersControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test 'should get show' do
-    get admin_user_path(users(:one))
-    assert_response :success
-  end
-
   test 'should get edit' do
     get edit_admin_user_path(users(:one))
     assert_response :success

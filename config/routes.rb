@@ -6,6 +6,6 @@ Rails.application.routes.draw do
   post 'dashboards/mailchimp_signup'
 
   namespace :admin do
-    resources :users, except: [:new, :create]
+    resources :users, except: [:new, :create, :show]
   end
 end

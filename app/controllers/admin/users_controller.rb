@@ -2,10 +2,10 @@ class Admin::UsersController < ApplicationController
   before_action :set_user, except: :index
 
   def index
-    @pagy, @users = pagy(User.all)
+    @users = searched_scope(User.all, "email", "search_by_user_info")
+    @users = @users.order(sort_column('email') + " " + sort_direction) if params[:column].present?
+    @pagy, @users = pagy(@users)
   end
-
-  def show; end
 
   def edit; end
 
@@ -22,10 +22,18 @@ class Admin::UsersController < ApplicationController
   private
 
     def user_params
-      params.require(:user).permit(:email, :first_name, :password)
+      params.require(:user).permit(:search, :email, :first_name, :password)
     end
 
     def set_user
       @user = User.find(params[:id])
+    end
+
+    def sortable_columns
+      %w[email first_name]
+    end
+
+    def filter_param_keys
+      %i[search column direction email]
     end
 end
