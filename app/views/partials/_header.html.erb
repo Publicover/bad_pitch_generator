@@ -44,6 +44,20 @@
             <li><%= link_to 'New Noun', new_admin_noun_path, class: 'dropdown-item' %></li>
           </ul>
         </li>
+
+        <li class='nav-item dropdown'>
+          <a class="nav-link dropdown-toggle
+                    <%= active_if(admin_organizations_path) %>
+                    <%= active_if(new_admin_organization_path) %>"
+                     href='#' id='navbarDropdown' role='button'
+                     data-bs-toggle='dropdown' aria-expanded='false'>
+            Organizations
+          </a>
+          <ul class='dropdown-menu' aria-labelledby='navbarDropdown'>
+            <li><%= link_to 'All Organizations', admin_organizations_path, class: 'dropdown-item' %></li>
+            <li><%= link_to 'New Organization', new_admin_organization_path, class: 'dropdown-item' %></li>
+          </ul>
+        </li>
       </ul>
 
       <ul class='navbar-nav ms-auto'>

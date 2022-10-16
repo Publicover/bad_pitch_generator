@@ -9,5 +9,6 @@ Rails.application.routes.draw do
     resources :users, except: [:new, :create, :show]
     resources :companies, except: [:show]
     resources :nouns, except: [:show]
+    resources :organizations, except: [:show]
   end
 end
