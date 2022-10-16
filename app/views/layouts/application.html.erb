@@ -9,7 +9,7 @@
     <%= favicon_link_tag asset_path('favicon.png') %>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <link href="https://fonts.googleapis.com/css?family=DM+Sans:400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans:300,400,600" rel="stylesheet">
       <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     </link>
   </head>
@@ -22,6 +22,7 @@
       <p class='alert text-center'><%= alert %></p>
     <% end %>
     <%= render 'partials/header' if current_user %>
+    <%= render 'partials/example_sentence' if current_user %>
     <%= yield %>
   </body>
 </html>
