@@ -1,0 +1,20 @@
+<%= form_for [:admin, @verb] do |f| %>
+  <div class='container'>
+    <%= render 'partials/form_errors', object: @verb %>
+  </div>
+
+  <div class='row'>
+    <div class='col text-end'>
+      <%= f.label 'Word', class: 'form-label' %>
+    </div>
+    <div class='col text-start'>
+      <%= f.text_field :word, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class='row'>
+    <div class='col text-center mt-3'>
+      <%= f.submit 'Create', class: 'btn btn-secondary' %>
+    </div>
+  </div>
+<% end %>

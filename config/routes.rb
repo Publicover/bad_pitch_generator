@@ -10,5 +10,6 @@ Rails.application.routes.draw do
     resources :companies, except: [:show]
     resources :nouns, except: [:show]
     resources :organizations, except: [:show]
+    resources :verbs, except: [:show]
   end
 end
