@@ -1,0 +1,34 @@
+<div class='container'>
+  <div class='row'>
+    <div class='col text-center'>
+      <h3 class='panel-title'>ADJECTIVES</h3>
+    </div>
+  </div>
+
+  <div class='row'>
+    <div class='col text-center'>
+      <%= render 'partials/search_form', url: admin_adjectives_path %>
+    </div>
+  </div>
+  <%= render 'partials/clear_search', path: admin_adjectives_path %>
+
+
+  <table class='table table-hover'>
+    <thead>
+      <tr>
+        <th scope='col'><%= sort_link 'word' %></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @adjectives.each do |adjective| %>
+        <tr>
+          <td scope='row'><%= adjective.word %></td>
+          <td><%= link_to 'Edit', edit_admin_adjective_path(adjective) %></td>
+          <td><%= link_to 'Delete', admin_adjective_path(adjective), method: :delete %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+<%= render 'partials/pagy_menu' %>
