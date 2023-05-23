@@ -32,8 +32,8 @@ class Sentencer
   end
 
   def predicate
-    verb = Verb.all.sample.word
-    verb == 'carf' ? 'carve' : verb.singularize
+    verb = Verb.all.sample.word.singularize
+    verb == 'carf' ? 'carve' : verb
   end
 
   def obj
