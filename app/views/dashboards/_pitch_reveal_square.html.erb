@@ -1,5 +1,15 @@
 <div id='pitch-reveal-square'>
   <div class='row'>
+    <div class='col text-center'>
+      <span>
+        <p id='screenshot'>
+          Screenshot and share your bad pitch!<br>
+          If you tag us, we'll send you a discount for our tools.
+        </p>
+      </span>
+    </div>
+  </div>
+  <div class='row'>
     <div class='col-xs-12 col-md-4 offset-md-4 col-lg-6 offset-lg-3 text-start text-wrap'>
       <div class='bad-pitch-square'>
         <div class='row'>
@@ -18,19 +28,10 @@
       </div>
     </div>
 
-    <div class='col-md-3 text-start align-middle share-copy mobile-margin'>
-      <span>
-        Share your screenshot on
-        <br /><%= link_to 'Linkedln and tag us', 'https://www.linkedin.com/company/publicover/?originalSubdomain=de', target: "_blank" %>
-        <br />& we'll send you a discount
-        <br />code for our DIY Tools!
-      </span>
-      <%= image_tag('arrow_down_swirls.png', class: 'mobile-hidden') %>
-    </div>
-
     <div class='offset-md-3 ms-auto text-start align-middle'>
       <div class='text-center'>
-        <div class='closing-copy fst-italic' id='fancy-a-go'>Wow, such awful. Fancy another go?</div>
+        <%# <div class='closing-copy fst-italic' id='fancy-a-go'>Wow, such awful. Fancy another go?</div> %>
+        <p id='another-go'>OK, that's really bad. Go again?</p>
         <%= render 'pitch_button' %>
       </div>
     </div>
